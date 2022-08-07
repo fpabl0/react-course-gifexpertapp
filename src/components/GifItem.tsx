@@ -1,6 +1,6 @@
 import { Image } from '../helpers/getGifs';
 
-type Props = Image;
+type Props = Pick<Image, 'title' | 'url'>;
 
 export const GifItem = ({ title, url }: Props) => {
 
